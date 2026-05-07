@@ -22,7 +22,7 @@ logging.basicConfig(
 
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
-INVENTORY_URL = 'https://alliedwheel.tireweb.com/treadsearch/inventory.asp?key=H92nj53w3Ue&user=TEP02&passhash=03b9222f54b31305fff140b792678365'
+INVENTORY_URL = os.environ.get('ALLIED_INVENTORY_URL')
 
 WBR_FTP_HOST = os.environ.get('FTP_HOST')
 WBR_FTP_USER = os.environ.get('FTP_USER')

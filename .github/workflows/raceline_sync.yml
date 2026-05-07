@@ -28,4 +28,5 @@ jobs:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
+          ALLIED_INVENTORY_URL: ${{ secrets.ALLIED_INVENTORY_URL }}
         run: python scripts/sync_raceline_ftp.py
